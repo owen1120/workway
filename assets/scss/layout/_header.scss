@@ -1,4 +1,7 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

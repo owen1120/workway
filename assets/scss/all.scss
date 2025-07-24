@@ -1,12 +1,16 @@
 // base
 @import "./base/reset";
-@import "./base/base";
 @import "./base/color";
 @import "./base/typography";
 @import "./base/spacing";
 @import "./base/radius";
 
+// utils
+@import "./utils/variables";
+
 // components
+
+@import "./base/base";
 
 // layout
 @import "./layout/header";
@@ -15,6 +19,3 @@
 
 // pages
 @import "./pages/index";
-
-// utils
-@import "./utils/variables";
