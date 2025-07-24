@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+    font-family: $en-fonts-family;
+}
+body{
+    color: var(--neutral-900);
+}
+img{
+    display: block;
+}
+.container{
+    max-width: 1296px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 24px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.col-12-xxl{
+    grid-column: 1 / -1;
+}
+.col-11-xxl{
+    grid-column: span 11;
+}
+.col-10-xxl{
+    grid-column: span 10;
+}
+.col-9-xxl{
+    grid-column: span 9;
+}
+.col-8-xxl{
+    grid-column: 8;
+}
+.col-7-xxl{
+    grid-column: span 7;
+}
+.col-6-xxl{
+    grid-column: span 6;
+}
+.col-5-xxl{
+    grid-column: span 5;
+}
+.col-4-xxl{
+    grid-column: span 4;
+}
+.col-3-xxl{
+    grid-column: span 3;
+}
+.col-2-xxl{
+    grid-column: span 2;
+}
+.col-1-xxl{
+    grid-column: span 1;
+}
+
+@media (max-width: 376px) {
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 16px;
+        margin: 0 auto;
+    }
+}
+
+// radius
+.radius-sm{
+    border-radius: 4px;
+}
+.radius-md{
+    border-radius: 12px;
+}
+.radius-rounded{
+    border-radius: 1000px;
+}
