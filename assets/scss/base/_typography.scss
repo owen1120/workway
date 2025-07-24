@@ -67,3 +67,37 @@ a {
     font-weight: 400;
     line-height: 1.5;
 }
+
+@media (max-width: 376px) {
+    .display{
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    .title-5xl{
+        font-size: 2rem;
+    }
+    .title-4xl{
+        font-size: 1.75rem;
+    }
+    .title-3xl{
+        font-size: 1.5rem;
+    }
+    .title-2xl{
+        font-size: 1.25rem;
+    }
+    .title-xl{
+        font-size: 1.125rem;
+    }
+    .b-l{
+        font-size: 1rem;
+    }
+    .b-m{
+        font-size: 0.875rem;
+    }
+    .b-s{
+        font-size: 0.875rem;
+    }
+    .b-xs{
+        font-size: 0.75rem;
+    }
+}
