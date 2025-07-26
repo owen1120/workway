@@ -10,3 +10,25 @@
 .radius-1000{
     border-radius: 1000px;
 }
+
+.radius-card{
+    border-radius: 24px;
+}
+.radius-btn{
+    border-radius: 16px;
+}
+.radius-td{
+    border-radius: 12px;
+}
+
+@media (max-width: 376px) {
+    .radius-card{
+        border-radius: 16px;
+    }
+    .radius-btn{
+        border-radius: 12px;
+    }
+    .radius-td{
+        border-radius: 12px;
+    }
+}

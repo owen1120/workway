@@ -1,7 +1,44 @@
 .header{
+  padding: $spac-12;
   .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo{
+      width: 124px;
+    }
+    .nav{
+      display: flex;
+      align-items: center;
+      .nav-item{
+        padding: 8px 24px;
+      }
+    }
+    .member{
+      .login{
+        background-color: $b-ghost-bg;
+        padding: 8px 24px;
+        border: 1px solid $g-border-primary;
+      }
+      .userdata{
+        display: flex;
+        align-items: center;
+        gap: $spac-8;
+        .imgs{
+          width: 44px;
+          aspect-ratio: 1 / 1;
+          border: 1px solid $g-border-primary;
+          overflow: hidden;
+          img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+      .logout{
+        display: none;
+      }
+    }
   }
 }
