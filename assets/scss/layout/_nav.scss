@@ -1,0 +1,20 @@
+.nav-item-fill, .nav-item-outline{
+    color: $g-text-primary;
+    letter-spacing: 0.02rem;
+    padding: $spac-8 $spac-24;
+}
+.nav-item-outline{
+    background-color: $b-ghost-bg;
+    border: 1px solid $g-border-primary;
+}
+.nav-item-fill, .nav-item-outline{
+    &:hover, &.hover, &:active, &.active{
+        background-color: $b-ghost-bg-hover;
+    }
+}
+
+@media (max-width: 376px) {
+    .nav-item-fill, .nav-item-outline{
+        padding: $spac-8 $spac-16;
+    }
+}
