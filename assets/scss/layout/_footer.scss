@@ -12,7 +12,7 @@
     z-index: 1;
   }
   .container{
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     .nav{
@@ -33,7 +33,7 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 576px) {
   .footer{
     padding: $spac-24 $spac-12;
     .container{

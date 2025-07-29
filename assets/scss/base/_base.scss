@@ -11,8 +11,10 @@ img{
     display: block;
 }
 .container{
-    max-width: 1296px;
-    display: grid;
+    max-width: 1320px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 $spac-12;
     margin: 0 auto;
 }
 .shadow{

@@ -22,20 +22,19 @@
     display: flex;
     align-items: center;
     gap: $spac-4;
+    flex-wrap: nowrap;
     color: $g-text-primary;
     letter-spacing: 0.02rem;
     background-color: $b-ghost-bg;
+    border: 1px solid $in-default-border;
     padding: $spac-12 $spac-12 $spac-12 $spac-20;
     transition: all 600ms;
     .icons{
-        width: 20px;
-        aspect-ratio: 1 / 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 20px;
     }
     &:hover, &.hover, &:active, &.active{
         background-color: $b-ghost-bg-hover;
+        border: none;
     }
 }
 .btn-lg{
@@ -77,7 +76,7 @@
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 576px) {
     .btn-md-fill, .btn-md-outline{
         gap: 0;
         padding: $spac-12 $spac-8 $spac-12 $spac-12;

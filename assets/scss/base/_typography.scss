@@ -17,87 +17,93 @@ a {
     outline: none;
 }
 
-.display{
+.en-display, .en-title-5xl, .en-title-4xl, .en-title-3xl, .en-title-2xl, .en-title-xl, .en-b-l, .en-b-m, .en-b-s, .en-b-xs{
+    font-family: $en-fonts-family;
+}
+.tw-display, .tw-title-5xl, .tw-title-4xl, .tw-title-3xl, .tw-title-2xl, .tw-title-xl, .tw-b-l, .tw-b-m, .tw-b-s, .tw-b-xs{
+    font-family: $tw-fonts-family;
+}
+.en-display, .tw-display{
     font-size: 5rem;
     font-weight: 700;
     line-height: 1;
 }
-.title-5xl{
+.en-title-5xl, .tw-title-5xl{
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
 }
-.title-4xl{
+.en-title-4xl, .tw-title-4xl{
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
 }
-.title-3xl{
+.en-title-3xl, .tw-title-3xl{
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 1.2;
 }
-.title-2xl{
+.en-title-2xl, .tw-title-2xl{
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.2;
 }
-.title-xl{
+.en-title-xl, .tw-title-xl{
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2;
 }
-.b-l{
+.en-b-l, .tw-b-l{
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.5;
 }
-.b-m{
+.en-b-m, .tw-b-m{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
 }
-.b-s{
+.en-b-s, .tw-b-s{
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5;
 }
-.b-xs{
+.en-b-xs, .tw-b-xs{
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 1.5;
 }
 
-@media (max-width: 376px) {
-    .display{
+@media (max-width: 576px) {
+    .en-display, .tw-display{
         font-size: 3rem;
         line-height: 1.2;
     }
-    .title-5xl{
+    .en-title-5xl, .tw-title-5xl{
         font-size: 2rem;
     }
-    .title-4xl{
+    .en-title-4xl, .tw-title-4xl{
         font-size: 1.75rem;
     }
-    .title-3xl{
+    .en-title-3xl, .tw-title-3xl{
         font-size: 1.5rem;
     }
-    .title-2xl{
+    .en-title-2xl, .tw-title-2xl{
         font-size: 1.25rem;
     }
-    .title-xl{
+    .en-title-xl, .tw-title-xl{
         font-size: 1.125rem;
     }
-    .b-l{
+    .en-b-l, .tw-b-l{
         font-size: 1rem;
     }
-    .b-m{
+    .en-b-m, .tw-b-m{
         font-size: 0.875rem;
     }
-    .b-s{
+    .en-b-s, .tw-b-s{
         font-size: 0.875rem;
     }
-    .b-xs{
+    .en-b-xs, .tw-b-xs{
         font-size: 0.75rem;
     }
 }
