@@ -5,7 +5,7 @@
     color: $g-text-deepbg-primary;
     letter-spacing: 0.02rem;
     background-color: $b-default-bg;
-    padding: $spac-12 $spac-12 $spac-12 $spac-20;
+    padding: $spac-12 $spac-20;
     transition: all 600ms;
     .icons{
         width: 20px;
@@ -27,7 +27,7 @@
     letter-spacing: 0.02rem;
     background-color: $b-ghost-bg;
     border: 1px solid $in-default-border;
-    padding: $spac-12 $spac-12 $spac-12 $spac-20;
+    padding: $spac-12 $spac-20;
     transition: all 600ms;
     .icons{
         font-size: 20px;
@@ -44,7 +44,7 @@
     color: $g-text-primary;
     letter-spacing: 0.02rem;
     background-color: $b-default-lg-bg;
-    padding: $spac-12 $spac-12 $spac-12 $spac-20;
+    padding: $spac-12 $spac-20;
     transition: all 600ms;
     .icons{
         width: 28px;
@@ -79,10 +79,10 @@
 @media (max-width: 576px) {
     .btn-md-fill, .btn-md-outline{
         gap: 0;
-        padding: $spac-12 $spac-8 $spac-12 $spac-12;
+        padding: $spac-12;
     }
     .btn-lg{
         gap: 0;
-        padding: $spac-8 $spac-8 $spac-8 $spac-12;
+        padding: $spac-8;
     }
 }

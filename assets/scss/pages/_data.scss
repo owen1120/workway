@@ -9,5 +9,34 @@
             align-items: center;
             gap: $spac-24;
         }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: $spac-48;
+            background-color: $g-bg-primary;
+            padding: $spac-48;
+            .forms{
+                display: flex;
+                gap: $spac-24;
+                .title{
+                    width: calc((100% - $spac-24) / 3);
+                }
+                .inputs-group{
+                    width: calc((100% - $spac-24) / 3 * 2);
+                    display: flex;
+                    flex-direction: column;
+                    gap: $spac-24;
+                    .pic{
+                        display: flex;
+                        align-items: flex-end;
+                        gap: $spac-16;
+                        .imgs{
+                            overflow: hidden;
+                            border: 1px solid $g-border-primary;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
