@@ -35,7 +35,44 @@
                             border: 1px solid $g-border-primary;
                         }
                     }
+                    .sex-input{
+                        display: flex;
+                        flex-direction: column;
+                        gap: $spac-8;
+                        .radio-list{
+                            display: flex;
+                            gap: $spac-24;
+                            padding: 0 $spac-8;
+                        }
+                    }
+                    .password{
+                        display: flex;
+                        flex-direction: column;
+                        gap: $spac-8;
+                        a{
+                            align-self: flex-start;
+                        }
+                    }
+                    .mail-input{
+                        margin-bottom: 0.875rem;
+                        .error-box{
+                            display: block;
+                            background-color: transparent;
+                            span{
+                                display: none;
+                            }
+                            p{
+                                color: $g-text-secondary;
+                            }
+                        }
+                    }
                 }
+            }
+            .btns{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: $spac-24;
             }
         }
     }

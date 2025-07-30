@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     gap: $spac-4;
-    color: $g-text-deepbg-primary;
     letter-spacing: 0.02rem;
     background-color: $b-default-bg;
     padding: $spac-12 $spac-20;
@@ -14,6 +13,9 @@
         justify-content: center;
         align-items: center;
     }
+    span, p{
+        color: $g-text-deepbg-primary;
+    }
     &:hover, &.hover, &:active, &.active{
         background-color: $b-default-bg-hover;
     }
@@ -23,7 +25,6 @@
     align-items: center;
     gap: $spac-4;
     flex-wrap: nowrap;
-    color: $g-text-primary;
     letter-spacing: 0.02rem;
     background-color: $b-ghost-bg;
     border: 1px solid $in-default-border;
@@ -32,16 +33,18 @@
     .icons{
         font-size: 20px;
     }
+    span, p{
+        color: $g-text-primary;
+    }
     &:hover, &.hover, &:active, &.active{
         background-color: $b-ghost-bg-hover;
-        border: none;
+        border: 1px solid transparent;
     }
 }
 .btn-lg{
     display: flex;
     align-items: center;
     gap: $spac-4;
-    color: $g-text-primary;
     letter-spacing: 0.02rem;
     background-color: $b-default-lg-bg;
     padding: $spac-12 $spac-20;
@@ -52,6 +55,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    span, p{
+        color: $g-text-primary;
     }
     &:hover, &.hover, &:active, &.active{
         background-color: $b-default-lg-bg-hover;
@@ -66,10 +72,12 @@
     }
 }
 .btn-sm{
-    color: $g-text-secondary;
     background-color: $b-ghost-bg;
     border: 1px solid $g-border-primary;
     padding: $spac-4 $spac-4 $spac-4 $spac-8;
+    span, p{
+        color: $g-text-secondary;
+    }
     &:hover, &.hover, &:active, &.active{
         border: none;
         background-color: $b-ghost-bg-hover;

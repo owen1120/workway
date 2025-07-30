@@ -39,11 +39,90 @@
                                 <p>更新頭貼</p>
                             </a>
                         </div>
-                        <div class="name-input">
+                        <div class="name-input input fill">
                             <label for="name">姓名</label>
                             <input type="text" id="name" placeholder="Mokumaru">
+                            <div class="error-box">
+                                <span class="material-symbols-outlined">error</span>
+                                <p class="tw-b-xs">error text</p>
+                            </div>
+                        </div>
+                        <div class="sex-input">
+                            <p class="tw-b-m">性別</p>
+                            <ul class="radio-list">
+                                <li class="list-item radio">
+                                    <input type="radio" id="radio-female" name="sex">
+                                    <label for="radio-female">
+                                        <span class="custom-radio active"></span>
+                                        <span class="tw-b-s">女性</span>
+                                    </label>
+                                </li>
+                                <li class="list-item radio">
+                                    <input type="radio" id="radio-male" name="sex">
+                                    <label for="radio-male">
+                                        <span class="custom-radio"></span>
+                                        <span class="tw-b-s">男性</span>
+                                    </label>
+                                </li>
+                                <li class="list-item radio">
+                                    <input type="radio" id="radio-nosex" name="sex">
+                                    <label for="radio-nosex">
+                                        <span class="custom-radio"></span>
+                                        <span class="tw-b-s">不願透漏</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="birth-input input fill">
+                            <label for="birth">生日</label>
+                            <input type="text" id="birth" placeholder="2000/01/10">
+                            <div class="error-box">
+                                <span class="material-symbols-outlined">error</span>
+                                <p class="tw-b-xs">error text</p>
+                            </div>
+                        </div>
+                        <div class="password">
+                            <p class="tw-b-m">密碼</p>
+                            <a href="#" class="btn-md-outline radius-btn">
+                                <span>修改密碼</span>
+                                <span class="material-symbols-outlined">keyboard_arrow_right</span>
+                            </a>
+                        </div>
+                        <div class="mail-input input fill">
+                            <label for="mail">信箱</label>
+                            <input type="text" id="mail" placeholder="mokumaru@mail.com">
+                            <div class="error-box">
+                                <span class="material-symbols-outlined">error</span>
+                                <p class="tw-b-s">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</p>
+                            </div>
+                        </div>
+                        <div class="phone-input input fill">
+                            <label for="phone">連絡電話</label>
+                            <input type="text" id="phone" placeholder="09-1234-5678">
+                            <div class="error-box">
+                                <span class="material-symbols-outlined">error</span>
+                                <p class="tw-b-xs">error text</p>
+                            </div>
+                        </div>
+                        <div class="address-input input fill">
+                            <label for="address">通訊地址</label>
+                            <input type="text" id="address" placeholder="高雄市三民區九如一路 87 號">
+                            <div class="error-box">
+                                <span class="material-symbols-outlined">error</span>
+                                <p class="tw-b-xs">error text</p>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="btns">
+                    <a href="#" class="btn-md-outline radius-btn">
+                        <span class="tw-b-m">重新填寫</span>
+                        <span class="material-symbols-outlined">keyboard_arrow_right</span>
+                    </a>
+                    <a href="#" class="btn-md-fill radius-btn">
+                        <span class="tw-b-m">儲存更新</span>
+                        <span class="material-symbols-outlined">keyboard_arrow_right</span>
+                    </a>
                 </div>
             </div>
         </div>

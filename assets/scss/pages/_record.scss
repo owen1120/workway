@@ -9,5 +9,51 @@
             align-items: center;
             gap: $spac-24;
         }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: $spac-48;
+            background-color: $g-bg-primary;
+            padding: $spac-48;
+            .record-cards{
+                display: flex;
+                flex-direction: column;
+                gap: $spac-24;
+                .cards{
+                    display: flex;
+                    gap: $spac-24;
+                    .card{
+                        width: calc((100% - $spac-24 * 2) / 3);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: $spac-8;
+                        background-color: $g-bg-primary;
+                        border: 1px solid $g-border-primary;
+                        padding: $spac-24;
+                        span{
+                            color: $g-text-hover-primary;
+                        }
+                        p{
+                            color: $g-text-secondary;
+                        }
+                    }
+                }
+            }
+            .consult-table{
+                display: flex;
+                flex-direction: column;
+                gap: $spac-24;
+                .filter-btns{
+                    display: flex;
+                    justify-content: space-between;
+                    .btns{
+                        display: flex;
+                        gap: $spac-8;
+                    }
+                }
+            }
+        }
     }
 }
