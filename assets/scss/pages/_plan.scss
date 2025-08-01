@@ -9,5 +9,29 @@
             align-items: center;
             gap: $spac-24;
         }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: $spac-48;
+            padding: $spac-48;
+            .overview-form{
+                display: flex;
+                .title-group{
+                    width: 35%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: $spac-4;
+                    p{
+                        color: $g-text-secondary;
+                        span{
+                            color: $g-text-deepbg-primary;
+                            background-color: $g-bg-error;
+                            border-radius: 1000px;
+                            padding: $spac-4 $spac-8;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

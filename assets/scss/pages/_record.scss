@@ -45,12 +45,29 @@
                 display: flex;
                 flex-direction: column;
                 gap: $spac-24;
+                position: relative;
                 .filter-btns{
                     display: flex;
                     justify-content: space-between;
                     .btns{
                         display: flex;
                         gap: $spac-8;
+                    }
+                }
+                .filter-drop-list{
+                    display: none;
+                    position: absolute;
+                    top: 56px;
+                    right: 0;
+                    width: 160px;
+                    background-color: $g-light;
+                    padding: $spac-8 0;
+                    z-index: 1;
+                    .filter-drop-item a{
+                        padding: $spac-8 $spac-24;
+                        &:hover, &.hover, &:focus, &.focus{
+                            background-color: $b-ghost-bg-hover;
+                        }
                     }
                 }
             }
