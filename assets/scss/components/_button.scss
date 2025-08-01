@@ -4,14 +4,11 @@
     gap: $spac-4;
     letter-spacing: 0.02rem;
     background-color: $b-default-bg;
+    border: none;
     padding: $spac-12 $spac-20;
     transition: all 600ms;
     .icons{
-        width: 20px;
-        aspect-ratio: 1 / 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 20px;
     }
     span, p{
         color: $g-text-deepbg-primary;
@@ -47,14 +44,11 @@
     gap: $spac-4;
     letter-spacing: 0.02rem;
     background-color: $b-default-lg-bg;
+    border: none;
     padding: $spac-12 $spac-20;
     transition: all 600ms;
     .icons{
-        width: 28px;
-        aspect-ratio: 1 / 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 28px;
     }
     span, p{
         color: $g-text-primary;
@@ -67,6 +61,7 @@
     max-width: 44px;
     max-height: 44px;
     aspect-ratio: 1 / 1;
+    border: none;
     &:hover, &.hover, &:active, &.active{
         background-color: $b-ghost-bg-hover;
     }
@@ -74,12 +69,12 @@
 .btn-sm{
     background-color: $b-ghost-bg;
     border: 1px solid $g-border-primary;
-    padding: $spac-4 $spac-4 $spac-4 $spac-8;
+    padding: $spac-4 $spac-8;
     span, p{
         color: $g-text-secondary;
     }
     &:hover, &.hover, &:active, &.active{
-        border: none;
+        border: 1px solid transparent;
         background-color: $b-ghost-bg-hover;
     }
 }
