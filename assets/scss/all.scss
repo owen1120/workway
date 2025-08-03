@@ -1,29 +1,11 @@
-// base
-@import "./base/reset";
-@import "./base/color";
-@import "./base/typography";
-@import "./base/spacing";
-@import "./base/radius";
+@import '../../node_modules/bootstrap/scss/functions';
+@import './utils/variables';
+@import '../../node_modules/bootstrap';
 
-// utils
-@import "./utils/variables";
+@import './base/base';
 
-// components
-@import "./components/button";
-@import "./components/input";
-@import "./components/checkbox";
-@import "./components/radio";
+@import './layout/header.scss';
+@import './layout/footer.scss';
 
-@import "./base/base";
-
-// layout
-@import "./layout/header";
-@import "./layout/footer";
-@import "./layout/grid";
-@import "./layout/nav";
-
-// pages
-@import "./pages/index";
-@import "./pages/data";
-@import "./pages/record";
-@import "./pages/plan";
+@import './pages/index.scss';
+@import './pages/user';
