@@ -1,4 +1,12 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background-color: #F0F3F5;
+  border-image: linear-gradient(to right, transparent 5%, #D1D9E1, transparent 95%) 1; 
+  .container{
+    .row{
+      .copyright{
+        display: inline-block;
+        font-size: $font-size-sm;
+      }
+    }
+  }
 }

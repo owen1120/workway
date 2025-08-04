@@ -2,5 +2,27 @@
     background-color: #F0F3F5;
     .container{
         padding: 80px 0;
+        #pills-tabContent{
+            #pills-info{
+                .content-container{
+                    background-color: #FCFCFD;
+                    border-radius: 24px;
+                    .content{
+                        .title{
+                            width: calc((100% - 24px)/10 * 3);
+                        }
+                        .form-container{
+                            width: calc((100% - 24px)/10 * 7);
+                            .avatar .imgs{
+                                width: 120px;
+                                height: 120px;
+                                aspect-ratio: 1 / 1;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
