@@ -1,0 +1,54 @@
+// Global
+$primary: $primary-60;
+$secondary: $secondary-50;
+$light: $white;
+$icon-primary: $primary;
+$icon-secondary: $natural-50;
+$icon-default: $black;
+$icon-deep: $light;
+$icon-error: $danger-45;
+$bg-primary: $light;
+$bg-secondary: $natural-95;
+$bg-action-primary: $primary;
+$bg-action-secondary: $secondary-90;
+$bg-error: $danger-45;
+$border-primary: $natural-85;
+$border-secondary: $primary;
+$text-primary: $black;
+$text-secondary: $natural-50;
+$text-hover-primary: $primary;
+$text-deepbg-primary: $light;
+$text-error: $danger-45;
+$text-finish: $natural-60;
+$mask-bg: rgba($black, 0.6);
+
+// Button
+$btn-bg: $black;
+$btn-bg-hover: $secondary;
+$btn-lg-bg: $secondary;
+$btn-lg-bg-hover: $primary;
+$btn-ghost-bg: $light;
+$btn-ghost-bg-hover: $natural-90;
+$btn-success-bg: $success-40;
+$btn-success-bg-hover: $success-30;
+$btn-danger-bg: $danger-70;
+$btn-danger-bg-hover: $danger-45;
+$btn-warning-bg: $warning-48;
+$btn-warning-bg-hover: $warning-35;
+$btn-disable-bg: $natural-75;
+$btn-disable-bg-hover: $natural-50;
+
+// Input
+$input-bg: $light;
+$input-bg-border: $natural-85;
+$input-active-border-outline: $primary-90;
+$input-active-border: $primary;
+$input-error-border: $danger-45;
+$input-error-tips-bg: $danger-90;
+$input-disable-bg: $natural-75;
+
+// Table
+$table-bg-head: $light;
+$table-bg-body-odd: $light;
+$table-bg-body-even: $natural-90;
+$table-bg-body-hover: $primary-90;

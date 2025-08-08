@@ -1,23 +1,46 @@
 .data-main{
-    background-color: #F0F3F5;
+    background-color: $bg-secondary;
     .container{
-        padding: 80px 0;
-        #pills-tabContent{
-            #pills-info{
-                .content-container{
-                    background-color: #FCFCFD;
-                    border-radius: 24px;
-                    .content{
-                        .title{
-                            width: calc((100% - 24px)/10 * 3);
-                        }
-                        .form-container{
-                            width: calc((100% - 24px)/10 * 7);
-                            .avatar .imgs{
-                                width: 120px;
-                                height: 120px;
-                                aspect-ratio: 1 / 1;
-                                overflow: hidden;
+        padding: var(--spac-section80-48) var(--spac-section12-0);
+        .row .col-10{
+            #pills-tab{
+                gap: var(--spac24-16);
+                margin-bottom: var(--spac24-16);
+                li button{
+                    color: $text-primary;
+                    background: $btn-ghost-bg;
+                    border: 1px solid $input-bg-border;
+                    border-radius: var(--radius-btn);
+                    padding: 0.75rem var(--spac-btn20-12);
+                    &:hover, &.hover, &:active, &.active{
+                        background: $btn-ghost-bg-hover;
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+            #pills-tabContent{
+                #pills-info{
+                    .content-container{
+                        gap: var(--spac48-24);
+                        background-color: $bg-primary;
+                        border-radius: var(--radius-card);
+                        box-shadow: $box-shadow;
+                        padding: var(--spac48-24);
+                        .content{
+                            gap: var(--spac24-16);
+                            .title{
+                                width: calc((100% - 24px)/10 * 3);
+                            }
+                            .form-container{
+                                width: calc((100% - 24px)/10 * 7);
+                                min-width: 300px;
+                                gap: var(--spac24-16);
+                                .avatar .imgs{
+                                    width: 120px;
+                                    height: 120px;
+                                    aspect-ratio: 1 / 1;
+                                    overflow: hidden;
+                                }
                             }
                         }
                     }

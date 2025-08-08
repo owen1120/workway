@@ -1,0 +1,32 @@
+:root{
+    --radius-card: 1.5rem;
+    --radius-btn: 1rem;
+    --radius-tag: 0.75rem;
+    --radius-dropdown: 0.75rem;
+}
+
+.radius-card{
+    border-radius: 1.5rem;
+}
+.radius-btn{
+    border-radius: 1rem;
+}
+.radius-tag, .radius-dropdown{
+    border-radius: 0.75rem;
+}
+
+@media (max-width: 769px) {
+    :root{
+        --radius-card: 1rem;
+        --radius-btn: 0.75rem;
+        --radius-tag: 0.75rem;
+        --radius-dropdown: 0.75rem;
+    }
+
+    .radius-card{
+        border-radius: 1rem;
+    }
+    .radius-btn{
+        border-radius: 0.75rem;
+    }
+}
