@@ -1,0 +1,50 @@
+.btn-lg{
+    display: inline-flex;
+    gap: var(--spac-btn4-0);
+    color: $text-primary;
+    background: $btn-lg-bg;
+    border-radius: var(--radius-btn);
+    padding: var(--spac-btn12-8);
+    padding-left: var(--spac-btn20-12);
+    span{
+        font-size: 1.75rem;
+    }
+    &:hover, &.hover, &:active, &.active{
+        color: $text-deepbg-primary;
+        background: $btn-lg-bg-hover;
+    }
+}
+.btn-md-fill{
+    display: inline-flex;
+    gap: var(--spac-btn4-0);
+    color: $text-deepbg-primary;
+    background: $btn-bg;
+    border: 1px solid transparent;
+    border-radius: var(--radius-btn);
+    padding: 12px var(--spac-btn12-8);
+    padding-left: var(--spac-btn20-12);
+    span{
+        font-size: 1.25rem;
+    }
+    &:hover, &.hover, &:active, &.active{
+        color: $text-primary;
+        background: $btn-bg-hover;
+    }
+}
+.btn-md-outline{
+    display: inline-flex;
+    gap: var(--spac-btn4-0);
+    color: $text-primary;
+    background: $btn-ghost-bg;
+    border: 1px solid $input-bg-border;
+    border-radius: var(--radius-btn);
+    padding: 12px var(--spac-btn12-8);
+    padding-left: var(--spac-btn20-12);
+    span{
+        font-size: 1.25rem;
+    }
+    &:hover, &.hover, &:active, &.active{
+        background: $btn-ghost-bg-hover;
+        border: 1px solid transparent;
+    }
+}
