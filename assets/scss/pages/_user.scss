@@ -35,11 +35,27 @@
                 width: calc((100% - 24px)/10 * 7);
                 min-width: 300px;
                 gap: var(--spac24-16);
-                .avatar .imgs{
-                    width: 120px;
-                    height: 120px;
-                    aspect-ratio: 1 / 1;
-                    overflow: hidden;
+                .avatar{
+                    .imgs{
+                        width: 120px;
+                        height: 120px;
+                        aspect-ratio: 1 / 1;
+                        overflow: hidden;
+                    }
+                }
+                .form-floating{
+                    input{
+                        background: $input-bg;
+                        border: 1px solid $input-bg-border;
+                        border-radius: 8px;
+                    }
+                    input:not(:placeholder-shown)+label{
+                        color: $text-secondary;
+                    }
+                    p{
+                        color: $text-secondary;
+                        margin-left: 8px;
+                    }
                 }
             }
         }

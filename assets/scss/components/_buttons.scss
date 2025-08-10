@@ -4,8 +4,7 @@
     color: $text-primary;
     background: $btn-lg-bg;
     border-radius: var(--radius-btn);
-    padding: var(--spac-btn12-8);
-    padding-left: var(--spac-btn20-12);
+    padding: var(--spac-btn12-8) var(--spac-btn20-12);
     span{
         font-size: 1.75rem;
     }
@@ -21,8 +20,7 @@
     background: $btn-bg;
     border: 1px solid transparent;
     border-radius: var(--radius-btn);
-    padding: 12px var(--spac-btn12-8);
-    padding-left: var(--spac-btn20-12);
+    padding: 12px var(--spac-btn20-12);
     span{
         font-size: 1.25rem;
     }
@@ -38,8 +36,37 @@
     background: $btn-ghost-bg;
     border: 1px solid $input-bg-border;
     border-radius: var(--radius-btn);
-    padding: 12px var(--spac-btn12-8);
-    padding-left: var(--spac-btn20-12);
+    padding: 12px var(--spac-btn20-12);
+    span{
+        font-size: 1.25rem;
+    }
+    &:hover, &.hover, &:active, &.active{
+        background: $btn-ghost-bg-hover;
+        border: 1px solid transparent;
+    }
+}
+.btn-onlyicon{
+    max-width: 44px;
+    max-height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-btn);
+    span{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    &:hover, &.hover, &:active, &.active{
+        background: $btn-ghost-bg-hover;
+    }
+}
+.btn-sm{
+    display: inline-flex;
+    color: $text-secondary;
+    background: var(--btn-ghost-bg);
+    border-radius: var(--radius-btn);
+    border: 1px solid $border-primary;
+    padding: 4px 8px;
     span{
         font-size: 1.25rem;
     }
