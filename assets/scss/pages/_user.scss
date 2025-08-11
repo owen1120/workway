@@ -141,9 +141,12 @@
             }
         }
         .plan-info{
+            .form-container{
+                gap: var(--spac24-16);
+            }
             .occupational-status{
                 gap: 0.5rem;
-                .form-container{
+                .radio-container{
                     gap: 0 var(--spac24-16);
                 }
             }
