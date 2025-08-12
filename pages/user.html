@@ -304,7 +304,7 @@
                                             <textarea class="form-control body-md" id="career-summary" placeholder="職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）" rows="6"></textarea>
                                         </div>
                                         <div class="form-floating">
-                                            <input type="password" class="form-control" id="works" placeholder="作品案例展示">
+                                            <input type="text" class="form-control" id="works" placeholder="作品案例展示">
                                             <label for="works">作品案例展示</label>
                                         </div>
                                         <div class="d-flex flex-column gap-2">
@@ -350,6 +350,10 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="target-salary" placeholder="目標薪資/收入">
+                                            <label for="target-salary">目標薪資/收入</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="skills content-block">
@@ -357,14 +361,34 @@
                                         <h2 class="title-2xl">專業技能區塊</h2>
                                         <p class="body-md">欄位皆為<span class="body-sm">選填</span></p>
                                     </div>
-                                    <div class="form-container"></div>
+                                    <div class="form-container w-100 d-flex flex-column">
+                                        <div class="professional-background">
+                                            <textarea class="form-control body-md" id="professional-background" placeholder="專業背景和核心競爭力（最多300字）" rows="6"></textarea>
+                                        </div>
+                                        <div class="professional-skills">
+                                            <textarea class="form-control body-md" id="professional-skills" placeholder="專業技能（最多300字）" rows="6"></textarea>
+                                        </div>
+                                        <div class="language-proficiency">
+                                            <textarea class="form-control body-md" id="language-proficiency" placeholder="語文能力（最多300字）" rows="6"></textarea>
+                                        </div>
+                                        <div class="qualifications">
+                                            <textarea class="form-control body-md" id="qualifications" placeholder="資格證照（最多300字）" rows="6"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="edu content-block">
                                     <div class="title">
                                         <h2 class="title-2xl">教育背景</h2>
                                         <p class="body-md">欄位皆為<span class="body-sm">選填</span></p>
                                     </div>
-                                    <div class="form-container"></div>
+                                    <div class="form-container w-100 d-flex flex-column">
+                                        <div class="educational-background">
+                                            <textarea class="form-control body-md" id="educational-background" placeholder="學歷背景（最多500字）" rows="6"></textarea>
+                                        </div>
+                                        <div class="workshop">
+                                            <textarea class="form-control body-md" id="workshop" placeholder="專業培訓與工作坊（最多500字）" rows="6"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btns-group d-flex justify-content-center">
                                     <button type="button" class="btn btn-md-outline body-md">匯出 PDF<span class="material-symbols-outlined align-bottom">chevron_right</span></button>

@@ -124,12 +124,16 @@
             }
             .form-container{
                 width: calc((100% - 24px)/10 * 7);
+                gap: var(--spac24-16);
+                .form-control{
+                    background-color: $input-bg;
+                    border: 1px solid $input-bg-border;
+                    border-radius: .5rem;
+                    padding: 1rem .75rem;
+                }
             }
         }
         .plan-info{
-            .form-container{
-                gap: var(--spac24-16);
-            }
             .occupational-status, .monthly-income{
                 gap: 0.5rem;
                 .radio-container{
@@ -150,26 +154,11 @@
             }
             .career-summary{
                 color: $text-primary;
-                .form-control{
-                    background-color: $input-bg;
-                    border: 1px solid $input-bg-border;
-                    border-radius: .5rem;
-                    padding: 1rem .75rem;
-                }
             }
         }
         .planning{
-            .form-container{
-                gap: var(--spac24-16);
-            }
             .short-term-career-goals, .mid-tolong-term-career-vision{
                 color: $text-primary;
-                .form-control{
-                    background-color: $input-bg;
-                    border: 1px solid $input-bg-border;
-                    border-radius: .5rem;
-                    padding: 1rem .75rem;
-                }
             }
             .ideal-working-mode .radio-container{
                 gap: 0 var(--spac24-16);
