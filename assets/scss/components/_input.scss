@@ -1,0 +1,14 @@
+.form-floating{
+    input{
+        background: $input-bg;
+        border: 1px solid $input-bg-border;
+        border-radius: 8px;
+    }
+    input:not(:placeholder-shown)+label{
+        color: $text-secondary;
+    }
+    p{
+        color: $text-secondary;
+        margin-left: 8px;
+    }
+}

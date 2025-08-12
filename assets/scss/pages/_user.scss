@@ -43,20 +43,6 @@
                         overflow: hidden;
                     }
                 }
-                .form-floating{
-                    input{
-                        background: $input-bg;
-                        border: 1px solid $input-bg-border;
-                        border-radius: 8px;
-                    }
-                    input:not(:placeholder-shown)+label{
-                        color: $text-secondary;
-                    }
-                    p{
-                        color: $text-secondary;
-                        margin-left: 8px;
-                    }
-                }
             }
         }
     }
@@ -144,11 +130,50 @@
             .form-container{
                 gap: var(--spac24-16);
             }
-            .occupational-status{
+            .occupational-status, .monthly-income{
                 gap: 0.5rem;
                 .radio-container{
                     gap: 0 var(--spac24-16);
                 }
+            }
+            .dropdown .dropdown-toggle{
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid $input-bg-border;
+                border-radius: var(--radius-dropdown);
+                padding: 16px 12px;
+                &::after{
+                    content: '';
+                    display: none;
+                }
+            }
+            .career-summary{
+                color: $text-primary;
+                .form-control{
+                    background-color: $input-bg;
+                    border: 1px solid $input-bg-border;
+                    border-radius: .5rem;
+                    padding: 1rem .75rem;
+                }
+            }
+        }
+        .planning{
+            .form-container{
+                gap: var(--spac24-16);
+            }
+            .short-term-career-goals, .mid-tolong-term-career-vision{
+                color: $text-primary;
+                .form-control{
+                    background-color: $input-bg;
+                    border: 1px solid $input-bg-border;
+                    border-radius: .5rem;
+                    padding: 1rem .75rem;
+                }
+            }
+            .ideal-working-mode .radio-container{
+                gap: 0 var(--spac24-16);
+                padding: 8px 0;
             }
         }
         .btns-group{
