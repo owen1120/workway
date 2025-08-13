@@ -1,3 +1,6 @@
-.index-title {
-  font-size: 100px;
+.index-main{
+  .hero{
+    background-color: $bg-primary;
+    padding: var(--spac-section80-48) .75rem;
+  }
 }

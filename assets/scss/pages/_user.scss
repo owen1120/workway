@@ -131,6 +131,18 @@
                     border-radius: .5rem;
                     padding: 1rem .75rem;
                 }
+                .radio-container, .checkbox-container{
+                    gap: 0 var(--spac24-16);
+                    .form-check{
+                        display: flex;
+                        align-items: center;
+                        .form-check-input{
+                            width: 20px;
+                            height: 20px;
+                            margin-right: .25rem;
+                        }
+                    }
+                }
             }
         }
         .plan-info{
@@ -159,10 +171,6 @@
         .planning{
             .short-term-career-goals, .mid-tolong-term-career-vision{
                 color: $text-primary;
-            }
-            .ideal-working-mode .radio-container{
-                gap: 0 var(--spac24-16);
-                padding: 8px 0;
             }
         }
         .btns-group{
