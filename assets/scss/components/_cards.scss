@@ -1,0 +1,40 @@
+.card-story{
+    position: relative;
+    flex-shrink: 0;
+    width: var(--spac-card400-320);
+    background-color: $bg-primary;
+    border-radius: var(--radius-card);
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    .tag{
+        position: absolute;
+        top: .75rem;
+        left: .75rem;
+        display: inline-block;
+        color: $text-deepbg-primary;
+        background-color: $icon-primary;
+        border-radius: var(--radius-tag);
+        padding: .5rem 1rem;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        flex-grow: 1;
+        padding: 1rem;
+        padding-bottom: 1.5rem;
+        .card-text{
+            color: $text-secondary;
+            flex-grow: 1;
+        }
+        .job-name{
+            .job-title{
+                font-weight: 700;
+            }
+            .name-box{
+                border-left: 1px solid $border-primary;
+                padding-left: .5rem;
+            }
+        }
+    }
+}

@@ -1,6 +1,67 @@
 .index-main{
-  .hero{
     background-color: $bg-primary;
+  .hero{
+    position: relative;
     padding: var(--spac-section80-48) .75rem;
+    .gradient-ball{
+      width: 50rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .text{
+      z-index: 1;
+      .para{
+        color: $text-secondary;
+      }
+      .btn{
+        padding: var(--spac-btn12-8);
+        padding-left: var(--spac-btn20-12);
+      }
+    }
+    .img-box{
+      padding: var(--spac-section12-0);
+      z-index: 1;
+      .imgs-group{
+        width: calc((100% - 1.5rem * 2) / 3);
+      }
+    }
+  }
+  .story{
+    position: relative;
+    padding: var(--spac-section80-48) .75rem;
+    &::after {
+      content: ''; 
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $bg-secondary;
+      z-index: 0; 
+    }
+    .container{
+      position: relative;
+      z-index: 1;
+      .text{
+        width: calc((100% - 1.5rem) / 12 * 4);
+        gap: var(--spac24-16);
+        .logo{
+          width: var(--spac-img96-48);
+        }
+        p{
+          color: $text-secondary;
+        }
+      }
+      .content{
+        width: calc((100% - 1.5rem) / 12 * 8);
+        min-width: 300px;
+        max-height: var(--spac-card730-625);
+        display: flex;
+        gap: 10px;
+      }
+    }
   }
 }
