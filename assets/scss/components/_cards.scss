@@ -1,7 +1,7 @@
 .card-story{
     position: relative;
     flex-shrink: 0;
-    width: var(--spac-card400-320);
+    width: var(--spac-card400-320) !important;
     background-color: $bg-primary;
     border-radius: var(--radius-card);
     box-shadow: $box-shadow;
@@ -35,6 +35,91 @@
                 border-left: 1px solid $border-primary;
                 padding-left: .5rem;
             }
+        }
+    }
+}
+.card-adv{
+    position: relative;
+    min-width: 300px;
+    border-radius: var(--radius-card);
+    border: none;
+    overflow: hidden;
+    .tag{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: inline-flex;
+        align-items: center;
+        color: $text-secondary;
+        background-color: $bg-secondary;
+        border-top-right-radius: var(--radius-tag);
+        padding: .75rem;
+        padding-right: 1.5rem;
+        z-index: 1;
+        span{
+            font-size: 1.5rem;
+            color: $icon-primary;
+            margin-right: .5rem;
+        }
+    }
+    .card-body{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: $mask-bg;
+        padding: 1.5rem;
+        .card-text{
+            color: $text-deepbg-primary;
+        }
+    }
+    &:hover{
+        .card-body{
+            display: flex;
+        }
+    }
+}
+.card-server{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spac24-16);
+    background-color: $bg-primary;
+    border-radius: var(--radius-card);
+    padding: 4rem var(--spac24-16);
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    .tag{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $bg-secondary;
+        border-top-left-radius: .75rem;
+        border-bottom-right-radius: var(--radius-tag);
+        padding: .5rem 1rem;
+        p{
+            color: $text-hover-primary;
+            font-weight: bold;
+            span{
+                font-weight: bold;
+                margin-left: .25rem;
+            }
+        }
+    }
+    img{
+        width: 160px;
+        aspect-ratio: 1 / 1;
+    }
+    .card-body{
+        text-align: center;
+        .card-text{
+            color: $text-secondary;
         }
     }
 }

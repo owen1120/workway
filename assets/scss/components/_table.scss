@@ -41,3 +41,35 @@
         }
     }
 }
+.accordion-list{
+    .accordion-item{
+        box-shadow: $box-shadow;
+        .accordion-header .accordion-button{
+            font-weight: 700;
+            span{
+                margin: 0 .5rem;
+            }
+        }
+        .accordion-collapse.show {
+        position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 2rem; 
+                right: 2rem; 
+                height: 1px;
+                border-top: 1px dashed $border-primary; 
+            }
+        }
+        .accordion-body {
+            display: flex;
+            gap: .5rem;
+            padding-top: 1.5rem; 
+            p:first-child{
+                color: $text-hover-primary;
+                margin-left: .5rem;
+            }
+        }
+    }
+}

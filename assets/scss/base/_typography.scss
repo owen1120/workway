@@ -1,24 +1,24 @@
-h1, .h1, .display{
+.h1, .display{
     font-size: 5rem;
     font-weight: bold;
 }
-h2, .h2, .title-5xl{
+.h2, .title-5xl{
     font-size: 3rem;
     font-weight: bold;
 }
-h3, .h3, .title-4xl{
+.h3, .title-4xl{
     font-size: 2rem;
     font-weight: bold;
 }
-h4, .h4, .title-3xl{
+.h4, .title-3xl{
     font-size: 1.75rem;
     font-weight: bold;
 }
-h5, .h5, .title-2xl{
+.h5, .title-2xl{
     font-size: 1.5rem;
     font-weight: bold;
 }
-h6, .h6, .title-xl{
+.h6, .title-xl{
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -40,27 +40,27 @@ h6, .h6, .title-xl{
 }
 
 @media (max-width: 769px) {
-    h1, .h1, .display{
+    .h1, .display{
         font-size: 3rem;
         font-weight: bold;
     }
-    h2, .h2, .title-5xl{
+    .h2, .title-5xl{
         font-size: 2rem;
         font-weight: bold;
     }
-    h3, .h3, .title-4xl{
+    .h3, .title-4xl{
         font-size: 1.75rem;
         font-weight: bold;
     }
-    h4, .h4, .title-3xl{
+    .h4, .title-3xl{
         font-size: 1.5rem;
         font-weight: bold;
     }
-    h5, .h5, .title-2xl{
+    .h5, .title-2xl{
         font-size: 1.25rem;
         font-weight: bold;
     }
-    h6, .h6, .title-xl{
+    .h6, .title-xl{
         font-size: 1.125rem;
         font-weight: bold;
     }
