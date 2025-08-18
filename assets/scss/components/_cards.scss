@@ -113,13 +113,51 @@
         }
     }
     img{
-        width: 160px;
+        width: var(--spac-img160-120);
         aspect-ratio: 1 / 1;
     }
     .card-body{
         text-align: center;
         .card-text{
             color: $text-secondary;
+        }
+    }
+}
+.card-server-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spac24-16);
+    border: 2px solid transparent;
+    border-radius: var(--radius-card);
+    padding: 1.5rem var(--spac24-16);
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    &.hot{
+        border: 2px solid $secondary;
+        .tag{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: 700;
+            background-color: $secondary;
+            border-top-left-radius: .75rem;
+            border-bottom-right-radius: var(--radius-tag);
+            padding: .5rem 1rem;
+        }
+    }
+    img{
+        width: var(--spac-img160-120);
+        aspect-ratio: 1 / 1;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        .card-title, .card-text, .price{
+            text-align: center;
+            margin: 0;
         }
     }
 }
@@ -212,6 +250,7 @@
                 .list-item span{
                     font-size: 1.5rem;
                     color: $icon-primary;
+                    margin-right: .5rem;
                 }
             }
         }
@@ -229,6 +268,40 @@
         .btn{
             align-self: flex-start;
             padding-right: var(--spac-btn12-8);
+        }
+    }
+}
+.card-mentor{
+    flex-shrink: 0;
+    width: 320px;
+    background-color: $bg-primary;
+    border-radius: var(--radius-card);
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        padding-bottom: 1.5rem;
+        .card-text{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            h5, p{
+                font-weight: 500;
+            }
+            p{
+                color: $text-secondary;
+            }
+        }
+        .card-tags{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            span{
+                text-wrap: nowrap;
+            }
         }
     }
 }

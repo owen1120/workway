@@ -1,0 +1,189 @@
+.main-about{
+    .banner{
+        position: relative;
+        padding: var(--spac-section80-48) .75rem;
+        .banner-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .container{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spac48-24);
+            text-align: center;
+            z-index: 1;
+            p{
+                max-width: 800px;
+                color: $text-secondary;
+            }
+        }
+        .banner-person{
+            position: absolute;
+            right: 440px;
+            bottom: -.5rem;
+        }
+    }
+    .partner{
+        padding: var(--spac-section80-48) .75rem;
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: var(--spac48-24);
+            .title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spac24-16);
+                p{
+                    color: $text-secondary;
+                }
+            }
+            .cards{
+                display: flex;
+                gap: 1.5rem;
+                flex-wrap: nowrap;
+            }
+            .card-promise{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spac48-24);
+                background-color: $bg-action-primary;
+                border-radius: var(--radius-card);
+                padding: var(--spac48-24);
+                padding-top: var(--spac24-16);
+                box-shadow: $box-shadow;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: var(--spac24-16);
+                    .dialog{
+                        position: relative;
+                        display: inline-block;
+                        align-self: center;
+                        border-radius: 1rem;
+                        border: solid 2px $border-secondary;
+                        margin-bottom: 1rem;
+                        span{
+                            position: relative;
+                            background-color: $bg-primary;
+                            border-radius: 16px;
+                            padding: 12px 18px;
+                            color: $bg-action-primary;
+                            display: block;
+                            z-index: 3;
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            bottom: -7px;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            transform: rotate(45deg);
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 0 24px 24px;
+                            border-color: transparent transparent $bg-primary;
+                            z-index: 2;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: -9px;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            transform: rotate(45deg);
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 0 28px 28px;
+                            border-color: transparent transparent $border-secondary;
+                            z-index: 1;
+                        }
+                    }
+                    p{
+                        max-width: 800px;
+                        color: $text-deepbg-primary;
+                        text-align: center;
+                    }
+                }
+                img{
+                    max-width: 672px;
+                }
+            }
+        }
+    }
+    .co-info{
+        position: relative;
+        padding: var(--spac-section80-48) .75rem;
+        overflow: hidden;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 979px;
+            background-color: $bg-secondary;
+        }
+        .container{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spac48-24);
+            z-index: 1;
+            .title{
+                text-align: center;
+            }
+            .co-about{
+                display: flex;
+                flex-direction: column;
+                gap: var(--spac48-24);
+                background-color: $bg-primary;
+                border-radius: var(--radius-card);
+                padding: var(--spac48-24);
+                box-shadow: $box-shadow;
+                .co-table{
+                    table-layout: auto;
+                    th{
+                        width: auto;
+                        color: $text-secondary;
+                        white-space: nowrap;
+                        padding: var(--spac24-16);
+                    }
+                    td{
+                        width: 100%;
+                        font-weight: 500;
+                        padding: var(--spac24-16) 0;
+                        padding-right: var(--spac24-16);
+                    }
+                }
+                .map{
+                    height: var(--spac-img400-200);
+                }
+            }
+        }
+    }
+    .cta{
+        padding: 2.5rem .75rem;
+    }
+}

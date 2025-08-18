@@ -9,7 +9,45 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是contact</h1>
+    <main class="main main-contact">
+      <div class="container">
+        <div class="title">
+          <h1 class="title-4xl">聯絡我們</h1>
+          <p class="body-lg">每一封郵件，我們都會親自回覆。每一通電話，都是新可能的開始。</p>
+        </div>
+        <div class="content">
+          <form action="" method="post" class="contact-form">
+            <div class="title">
+              <h2 class="title-2xl">基本資料</h2>
+              <p class="subtitle body-md">欄位皆為<span class="body-sm radius-tag">必填</span></p>
+            </div>
+            <div class="input-group">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="contact-form-name" placeholder="姓名">
+                <label for="contact-form-name">姓名</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="contact-form-email" placeholder="信箱">
+                <label for="contact-form-email">信箱</label>
+                <p class="body-sm">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</p>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="contact-form-phone" placeholder="連絡電話">
+                <label for="contact-form-phone">連絡電話</label>
+                <p class="body-sm">我們不會以電話主動聯繫您，告知您要至ATM操作轉帳</p>
+              </div>
+              <select class="form-select" aria-label="Current occupation/work status">
+                <option selected>目前職業/工作身分</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <img src="../assets/images/contact/form-top.svg" alt="form-top" class="top-img">
+      </div>
+    </main>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
