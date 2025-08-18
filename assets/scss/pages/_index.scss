@@ -222,6 +222,9 @@
     }
   }
   .qa{
+    background-image: url(../assets/images/index/bg-grid.png);
+    background-repeat: repeat;
+    background-size: -50% -50%;
     padding: var(--spac-section80-48) .75rem;
     .container{
       display: flex;
@@ -293,7 +296,7 @@
             bottom: 0;
           }
         }
-        .qa-lists{
+        .accordion-list{
           width: calc((100% - 1.5rem) / 12 * 7);
           display: flex;
           flex-direction: column;
@@ -301,5 +304,8 @@
         }
       }
     }
+  }
+  .cta{
+    padding: 2.5rem .75rem;
   }
 }

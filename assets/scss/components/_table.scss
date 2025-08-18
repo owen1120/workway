@@ -43,7 +43,10 @@
 }
 .accordion-list{
     .accordion-item{
+        border: 1px solid $border-primary;
+        border-radius: .75rem;
         box-shadow: $box-shadow;
+        overflow: hidden;
         .accordion-header .accordion-button{
             font-weight: 700;
             span{

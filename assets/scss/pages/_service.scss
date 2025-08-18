@@ -1,0 +1,63 @@
+.main-service{
+    .banner{
+        position: relative;
+        padding: var(--spac-section80-48) .75rem;
+        .banner-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .container{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spac48-24);
+            text-align: center;
+            z-index: 1;
+            p{
+                color: $text-secondary;
+            }
+        }
+        .banner-person{
+            position: absolute;
+            right: 440px;
+            bottom: -.5rem;
+        }
+    }
+    .plant-1{
+        padding: var(--spac-section80-48) .75rem;
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: var(--spac48-24);
+            .title{
+                display: flex;
+                flex-direction: column;
+                gap: var(--spac24-16);
+                .icon-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: .25rem;
+                    text-align: center;
+                    img{
+                        width: 56px;
+                    }
+                }
+                .subtitle{
+                    color: $text-secondary;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
