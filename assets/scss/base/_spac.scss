@@ -22,6 +22,7 @@
     // section
     --spac-section80-48: 5rem;
     --spac-section12-0: 0.75rem;
+    --spac-section8-0: .5rem;
 }
 
 @media (max-width: 769px) {
@@ -49,5 +50,6 @@
         // section
         --spac-section80-48: 3rem;
         --spac-section12-0: 0;
+        --spac-section8-0: 0;
     }
 }

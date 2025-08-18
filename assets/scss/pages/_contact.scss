@@ -71,6 +71,33 @@
                         border-radius: .5rem !important;
                     }
                 }
+                .contact-form-checkbox-list{
+                    min-height: 56px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    .checkbox-list{
+                        display: flex;
+                        gap: 0 var(--spac24-16);
+                        flex-wrap: wrap;
+                        padding: 0 var(--spac-section8-0);
+                        .form-check{
+                            display: flex;
+                            gap: .25rem;
+                            input{
+                                width: 20px;
+                                height: 20px;
+                            }
+                            label{
+                                margin-top: .25rem;
+                            }
+                        }
+                    }
+                    .remark{
+                        color: $text-secondary;
+                        padding: 0 var(--spac-section8-0);
+                    }
+                }
             }
         }
         .top-img{
