@@ -29,6 +29,9 @@
                 gap: var(--spac24-16);
                 border-bottom: 1px solid $border-primary;
                 padding-bottom: var(--spac48-24);
+                &:nth-child(3){
+                    border: none;
+                }
                 .title{
                     width: 300px;
                     display: flex;
@@ -60,27 +63,88 @@
                         input{
                             border-radius: .5rem;
                         }
+                        label{
+                            color: $text-primary;
+                        }
                         p{
                             color: $text-secondary;
                             padding: 0 .5rem;
                             margin: 0;
+                        }
+                        textarea{
+                            height: 160px;
+                            min-height: 44px;
+                            border-radius: .5rem;
+                            padding: 1rem .75rem;
                         }
                     }
                     .form-select{
                         width: 100%;
                         border-radius: .5rem !important;
                     }
-                }
-                .contact-form-checkbox-list{
-                    min-height: 56px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: .5rem;
-                    .checkbox-list{
+                    .contact-form-checkbox-list{
+                        min-height: 56px;
                         display: flex;
-                        gap: 0 var(--spac24-16);
-                        flex-wrap: wrap;
-                        padding: 0 var(--spac-section8-0);
+                        flex-direction: column;
+                        gap: .5rem;
+                        .checkbox-list{
+                            display: flex;
+                            gap: 0 var(--spac24-16);
+                            flex-wrap: wrap;
+                            padding: 0 var(--spac-section8-0);
+                            .form-check{
+                                display: flex;
+                                gap: .25rem;
+                                input{
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                                label{
+                                    margin-top: .25rem;
+                                }
+                            }
+                        }
+                        .remark{
+                            color: $text-secondary;
+                            padding: 0 var(--spac-section8-0);
+                        }
+                    }
+                    .contact-form-radio-list{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+                        .radio-list{
+                            display: flex;
+                            gap: var(--spac24-16);
+                            padding: 0 .5rem;
+                            .form-radio{
+                                display: flex;
+                                gap: .25rem;
+                                input{
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                                label{
+                                    margin-bottom: .25rem;
+                                }
+                            }
+                        }
+                    }
+                    .date-control{
+                        label{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            span{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .agree-check{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
                         .form-check{
                             display: flex;
                             gap: .25rem;
@@ -89,14 +153,25 @@
                                 height: 20px;
                             }
                             label{
+                                display: flex;
+                                gap: .25rem;
                                 margin-top: .25rem;
+                                a{
+                                    color: $text-hover-primary;
+                                    text-decoration: underline;
+                                }
                             }
                         }
                     }
-                    .remark{
-                        color: $text-secondary;
-                        padding: 0 var(--spac-section8-0);
-                    }
+                }
+            }
+            .btns{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spac24-16);
+                button{
+                    padding-right: var(--spac-btn12-8);
                 }
             }
         }

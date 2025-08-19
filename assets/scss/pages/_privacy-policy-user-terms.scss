@@ -1,0 +1,23 @@
+.main-privacy-policy, .main-user-terms{
+    background-color: $bg-secondary;
+    padding: var(--spac-section80-48) .75rem;
+    .container{
+        max-width: 1076px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spac48-24);
+        .title{
+            text-align: center;
+        }
+        .privacy-policy-list{
+            display: flex;
+            flex-direction: column;
+            gap: var(--spac24-16);
+            list-style-type: none;
+            padding: 0;
+            .list-item h2{
+                margin-bottom: var(--spac-btn12-8);
+            }
+        }
+    }
+}

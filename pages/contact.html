@@ -86,8 +86,143 @@
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="您目前面臨的主要挑戰" id="main-challenges"></textarea>
+                <label for="main-challenges body-md">您目前面臨的主要挑戰</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="期望達成的目標" id="expected-goals"></textarea>
+                <label for="expected-goals body-md">期望達成的目標</label>
+              </div>
             </div>
           </form>
+          <form action="" method="post" class="contact-form">
+            <div class="title">
+              <h2 class="title-2xl">聯絡偏好</h2>
+              <p class="subtitle body-md">欄位皆為選填</p>
+            </div>
+            <div class="input-group">
+              <div class="contact-form-radio-list">
+                <p class="body-md">偏好聯絡方式</p>
+                <div class="radio-list">
+                  <div class="form-radio">
+                    <input class="form-radio-input" type="radio" value="" id="preferred-contact-method-email" name="preferred-contact-method" checked>
+                    <label class="form-radio-label body-sm" for="preferred-contact-method-email">信箱</label>
+                  </div>
+                  <div class="form-radio">
+                    <input class="form-radio-input" type="radio" value="" id="preferred-contact-method-phone" name="preferred-contact-method">
+                    <label class="form-radio-label body-sm" for="preferred-contact-method-phone">電話</label>
+                  </div>
+                  <div class="form-radio">
+                    <input class="form-radio-input" type="radio" value="" id="preferred-contact-method-line" name="preferred-contact-method">
+                    <label class="form-radio-label body-sm" for="preferred-contact-method-line">LINE</label>
+                  </div>
+                  <div class="form-radio">
+                    <input class="form-radio-input" type="radio" value="" id="preferred-contact-method-discord" name="preferred-contact-method">
+                    <label class="form-radio-label body-sm" for="preferred-contact-method-discord">Discord</label>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form-checkbox-list">
+                <p class="body-md">偏好聯絡時段</p>
+                <div class="checkbox-list">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="weekday-mornings">
+                    <label class="form-check-label body-sm" for="weekday-mornings">平日上午(9:00-12:00)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="weekday-afternoons">
+                    <label class="form-check-label body-sm" for="weekday-afternoons">平日下午(13:00-17:00)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="weekday-evenings">
+                    <label class="form-check-label body-sm" for="weekday-evenings">平日晚上(18:00-21:00)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="weekend-mornings">
+                    <label class="form-check-label body-sm" for="weekend-mornings">週末上午(9:00-12:00)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="weekend-afternoons">
+                    <label class="form-check-label body-sm" for="weekend-afternoons">週末下午(13:00-17:00)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="weekend-nights">
+                    <label class="form-check-label body-sm" for="weekend-nights">週末晚上(18:00-21:00)</label>
+                  </div>
+                </div>
+                <p class="remark body-sm">建議您可以勾選 2 個時段以上</p>
+              </div>
+              <div class="form-floating date-control">
+                <input type="text" class="form-control" id="appointment-consultation" placeholder="預約諮詢時間">
+                <label for="appointment-consultation">預約諮詢時間<span class="material-symbols-outlined">calendar_month</span></label>
+              </div>
+              <div class="contact-form-checkbox-list">
+                <p class="body-md">如何得知我們</p>
+                <div class="checkbox-list">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="google-search">
+                    <label class="form-check-label body-sm" for="google-search">Google 搜尋</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="instagram">
+                    <label class="form-check-label body-sm" for="instagram">Instagram</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="facebook">
+                    <label class="form-check-label body-sm" for="facebook">Facebook</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="threads">
+                    <label class="form-check-label body-sm" for="threads">Threads</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="youTube">
+                    <label class="form-check-label body-sm" for="youTube">YouTube</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="podcast">
+                    <label class="form-check-label body-sm" for="podcast">Podcast / 節目推薦</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="friends">
+                    <label class="form-check-label body-sm" for="friends">朋友或同事推薦</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="workshops">
+                    <label class="form-check-label body-sm" for="workshops">曾參加職旅活動 / 工作坊</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="career-consultant">
+                    <label class="form-check-label body-sm" for="career-consultant">職涯顧問介紹</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="know-other">
+                    <label class="form-check-label body-sm" for="know-other">其他（請填寫下題）</label>
+                  </div>
+                </div>
+                <p class="remark body-sm">最多勾選 3 個</p>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="期望達成的目標" id="want-to-say"></textarea>
+                <label for="want-to-say body-md">有什麼其他想告訴我們的事情嗎？（最多300字）</label>
+              </div>
+              <div class="agree-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                  <label class="form-check-label body-sm" for="checkDefault">我願意接收職旅最新資訊和專業內容</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkChecked">
+                  <label class="form-check-label body-sm" for="checkChecked">我同意<a href="#">服務條款</a>和<a href="#">隱私政策</a></label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="btns">
+            <button type="reset" class="btn btn-md-outline body-md">重新填寫<span class="material-symbols-outlined">chevron_right</span></button>
+            <button type="submit" class="btn btn-md-fill body-md">確認送出<span class="material-symbols-outlined">chevron_right</span></button>
+          </div>
         </div>
         <img src="../assets/images/contact/form-top.svg" alt="form-top" class="top-img">
       </div>
