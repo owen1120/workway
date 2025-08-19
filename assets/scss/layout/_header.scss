@@ -2,18 +2,26 @@
   .navbar{
     .container{
       .navbar-nav{
-        .nav-item{
-          margin-right: 12px;
-          &:last-child{
-            margin-right: 0;
-          }
-        }
+        display: flex;
+        gap: .75rem;
       }
       .user-avatar{
         width: 44px;
         height: 44px;
         aspect-ratio: 1 / 1;
       }
+      .login{
+        padding: .5rem var(--spac24-16);
+      }
     }
+  }
+}
+
+#loginModal{
+  .modal-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
