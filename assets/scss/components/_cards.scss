@@ -159,6 +159,9 @@
             text-align: center;
             margin: 0;
         }
+        .card-text{
+            color: $text-secondary;
+        }
     }
 }
 .card-cta{
@@ -261,6 +264,13 @@
             background-color: $bg-secondary;
             border-radius: var(--radius-tag);
             padding: var(--spac24-16);
+            .suitable{
+                display: flex;
+                text-wrap: nowrap;
+                b{
+                    text-wrap: wrap;
+                }
+            }
             .price b{
                 color: $text-hover-primary;
             }
@@ -302,6 +312,39 @@
             span{
                 text-wrap: nowrap;
             }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .card-cta{
+        .cta-btn{
+            flex-direction: column;
+            .contact{
+                flex-direction: column;
+            }
+            .btn{
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .card-plan{
+        &.hot{
+            padding-top: 3rem;
+        }
+        .content{
+            .text{
+                .list{
+                    .list-item span{
+                        font-size: 0.875rem;
+                        margin-bottom: .25rem;
+                    }
+                }
+            }
+        }
+        .imgs{
+            display: none;
         }
     }
 }

@@ -1,7 +1,7 @@
 <header class="header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <img src="/assets/images/logo.svg" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,73 +21,69 @@
                 </ul>
                 <!-- <a href="user.html"><img src="/assets/images/avatar.png" alt="avatar" class="user-avatar rounded-circle border me-2">Mokumaru</a> -->
 
-                <button type="button" class="btn btn-md-outline login body-md" data-bs-toggle="modal" data-bs-target="#authModal">登入/註冊</button>
+                <!-- 點擊此按鈕開啟 Modal -->
+                <button type="button" class="btn btn-md-outline body-md" data-bs-toggle="modal" data-bs-target="#authModal">登入/註冊</button>
 
+                <!-- 單一的彈出視窗 Modal -->
                 <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
+                <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-body p-0">
-                        <div class="row g-0">
-                            <div class="col-6 bg-light d-flex flex-column p-4 text-center justify-content-center" id="login-image-section">
-                            <img src="https://via.placeholder.com/300x400" class="img-fluid rounded mb-3" alt="...">
+                    <div class="modal-body">
+                        <!-- 登入頁面容器 -->
+                        <div class="auth-layout" id="login-section">
+                        <div class="auth-image-section">
+                            <img src="https://placehold.co/300x400/eeeeee/333333?text=Login" alt="登入頁面圖片">
                             <h4>歡迎回來！</h4>
                             <p>WorkWay 都在你身旁</p>
+                        </div>
+                        <div class="auth-form-section">
+                            <h5 class="modal-title">登入</h5>
+                            <form>
+                            <div class="form-group">
+                                <label for="login-email">電子郵件</label>
+                                <input type="email" class="form-control" id="login-email">
                             </div>
-                            <div class="col-6 bg-light d-flex flex-column p-4 text-center justify-content-center d-none" id="register-image-section">
-                            <img src="https://via.placeholder.com/300x400" class="img-fluid rounded mb-3" alt="...">
-                            <h4>註冊新帳號</h4>
+                            <div class="form-group">
+                                <label for="login-password">密碼</label>
+                                <input type="password" class="form-control" id="login-password">
+                            </div>
+                            <button type="submit" class="btn-submit">登入</button>
+                            </form>
+                            <div class="link-switch">
+                            還沒有帳號？ <a href="#" id="show-register-form">註冊</a>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- 註冊頁面容器 (預設隱藏) -->
+                        <div class="auth-layout d-none" id="register-section">
+                        <div class="auth-image-section">
+                            <img src="https://placehold.co/300x400/eeeeee/333333?text=Register" alt="註冊頁面圖片">
+                            <h4>加入我們！</h4>
                             <p>每一天都不會再是沒有方向的你</p>
+                        </div>
+                        <div class="auth-form-section">
+                            <h5 class="modal-title">註冊</h5>
+                            <form>
+                            <div class="form-group">
+                                <label for="register-email">電子郵件</label>
+                                <input type="email" class="form-control" id="register-email">
                             </div>
-
-                            <div class="col-6 p-4">
-                            <div class="d-flex justify-content-end">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="form-group">
+                                <label for="register-password">密碼</label>
+                                <input type="password" class="form-control" id="register-password">
                             </div>
-
-                            <div id="login-form-content">
-                                <h5 class="modal-title mb-4" id="authModalLabel">登入</h5>
-                                <form>
-                                <div class="mb-3">
-                                    <label for="login-email" class="form-label">電子郵件</label>
-                                    <input type="email" class="form-control" id="login-email">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="login-password" class="form-label">密碼</label>
-                                    <input type="password" class="form-control" id="login-password">
-                                </div>
-                                <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-primary">登入</button>
-                                </div>
-                                </form>
-                                <div class="text-center mt-3">
-                                還沒有帳號？ <a href="#" id="show-register-form">註冊</a>
-                                </div>
-                            </div>
-
-                            <div id="register-form-content" class="d-none">
-                                <h5 class="modal-title mb-4">註冊</h5>
-                                <form>
-                                <div class="mb-3">
-                                    <label for="register-email" class="form-label">電子郵件</label>
-                                    <input type="email" class="form-control" id="register-email">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="register-password" class="form-label">密碼</label>
-                                    <input type="password" class="form-control" id="register-password">
-                                </div>
-                                <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-primary">註冊</button>
-                                </div>
-                                </form>
-                                <div class="text-center mt-3">
-                                已有帳號？ <a href="#" id="show-login-form">登入</a>
-                                </div>
-                            </div>
+                            <button type="submit" class="btn-submit">註冊</button>
+                            </form>
+                            <div class="link-switch">
+                            已有帳號？ <a href="#" id="show-login-form">登入</a>
                             </div>
                         </div>
                         </div>
+
                     </div>
                     </div>
+                </div>
                 </div>
 
             </div>

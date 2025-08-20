@@ -1,12 +1,33 @@
 .footer{
+  border-top: 1px solid $bg-secondary;
   background-color: #F0F3F5;
   border-image: linear-gradient(to right, transparent 5%, #D1D9E1, transparent 95%) 1; 
+  padding: var(--spac48-24) .75rem;
   .container{
-    .row{
-      .copyright{
-        display: inline-block;
-        font-size: $font-size-sm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .nav-item .nav-link{
+        padding: .5rem var(--spac24-16);
       }
+    }
+    .copyright{
+      color: $text-secondary;
+      text-align: end;
+      text-wrap: nowrap;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .footer{
+    .container{
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }

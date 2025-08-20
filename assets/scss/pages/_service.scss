@@ -14,6 +14,9 @@
                 object-fit: cover;
                 object-position: center;
             }
+            .mobile-img{
+                display: none;
+            }
         }
         .container{
             position: relative;
@@ -189,5 +192,54 @@
     }
     .cta{
         padding: 2.5rem .75rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .main-service{
+        .banner{
+            .banner-img{
+                img{
+                    display: none;
+                }
+                background-image: url(../images/service/banner-bg.png);
+                background-size: 50% auto;
+                background-repeat: repeat;
+            }
+            .banner-person{
+                display: none;
+            }
+        }
+        .plant-1{
+            .container{
+                .cards{
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--spac24-16);
+                }
+            }
+        }
+        .plant-2{
+            .container{
+                .cards{
+                    flex-direction: column;
+                    .card{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .sub{
+            .container{
+                .card-subscribe{
+                    .subscribe-1{
+                        display: none;
+                    }
+                    .subscribe-2{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
