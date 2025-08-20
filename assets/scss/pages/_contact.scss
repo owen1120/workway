@@ -183,3 +183,30 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .main-contact{
+        .container{
+            .top-img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .main-contact{
+        .container{
+            .content{
+                .contact-form{
+                    flex-direction: column;                    
+                    .title{
+                        width: 100%;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}
