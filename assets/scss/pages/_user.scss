@@ -1,13 +1,22 @@
 .data-main{
     background-color: $bg-secondary;
     .container{
-        padding: var(--spac-section80-48) var(--spac-section12-0);
+        display: flex;
+        justify-content: center;
+        padding: var(--spac-section80-48) .75rem;
+        .col-10-cus{
+            flex: 0 0 auto;
+            width: 83.33333333%;
+        }
     }
 }
 #pills-tab{
+    justify-content: center;
     gap: var(--spac24-16);
     margin-bottom: var(--spac24-16);
     li button{
+        display: inline-flex;
+        gap: var(--spac-btn4-0);
         color: $text-primary;
         background: $btn-ghost-bg;
         border: 1px solid $input-bg-border;
@@ -21,12 +30,15 @@
 }
 #pills-info{
     .content-container{
+        display: flex;
+        flex-direction: column;
         gap: var(--spac48-24);
         background-color: $bg-primary;
         border-radius: var(--radius-card);
         box-shadow: $box-shadow;
         padding: var(--spac48-24);
         .content{
+            display: flex;
             gap: var(--spac24-16);
             .title{
                 width: calc((100% - 24px)/10 * 3);
@@ -34,8 +46,12 @@
             .form-container{
                 width: calc((100% - 24px)/10 * 7);
                 min-width: 300px;
+                display: flex;
+                flex-direction: column;
                 gap: var(--spac24-16);
                 .avatar{
+                    display: flex;
+                    align-items: end;
                     .imgs{
                         width: 120px;
                         height: 120px;
@@ -45,18 +61,29 @@
                 }
             }
         }
+        .btns{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spac24-16);
+        }
     }
 }
 #pills-record{
     .content{
+        display: flex;
+        flex-direction: column;
         gap: var(--spac48-24);
         background-color: $bg-primary;
         border-radius: var(--radius-card);
         box-shadow: $box-shadow;
         padding: var(--spac48-24);
         .title-cards{
+            display: flex;
+            flex-direction: column;
             gap: var(--spac24-16);
             .cards-group{
+                display: flex;
                 gap: var(--spac24-16);
                 .card{
                     width: calc((100% - var(--spac24-16) * 2) / 3);
@@ -65,6 +92,11 @@
                     border: 1px solid $border-primary;
                     border-radius: var(--radius-card);
                     .card-body{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: .5rem;
                         padding: var(--spac24-16);
                         .title-4xl{
                             color: $text-hover-primary;
@@ -77,24 +109,38 @@
             }
         }
         .table-group{
+            display: flex;
+            flex-direction: column;
             gap: var(--spac24-16);
             .btns-group{
-                gap: 12px;
-                button{
-                    display: block;
+                display: flex;
+                gap: .75rem;
+                .btns{
+                    display: flex;
+                    gap: .5rem;
+                    button{
+                        display: block;
+                    }
                 }
                 .filter-btn{
+                    display: flex;
+                    justify-content: end;
                     flex: 1;
                     button{
                         display: inline-flex;
                     }
                 }
             }
+            .mobile-table{
+                display: none;
+            }
         }
     }
 }
 #pills-plan{
     .content{
+        display: flex;
+        flex-direction: column;
         gap: var(--spac48-24);
         background-color: $bg-primary;
         border-radius: var(--radius-card);
@@ -123,7 +169,9 @@
                 }
             }
             .form-container{
-                width: calc((100% - 24px)/10 * 7);
+                width: 100%;
+                display: flex;
+                flex-direction: column;
                 gap: var(--spac24-16);
                 .form-control{
                     background-color: $input-bg;
@@ -132,6 +180,8 @@
                     padding: 1rem .75rem;
                 }
                 .radio-container, .checkbox-container{
+                    display: flex;
+                    flex-wrap: wrap;
                     gap: 0 var(--spac24-16);
                     .form-check{
                         display: flex;
@@ -142,6 +192,11 @@
                             margin-right: .25rem;
                         }
                     }
+                }
+                .ideal-working-mode, .current-career-challenges, .expected-assistance-and-resources, .interested-service-projects, .core-areas-of-expertise{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
                 }
             }
         }
@@ -173,8 +228,139 @@
                 color: $text-primary;
             }
         }
+        .edu{
+            border-bottom: none;
+        }
         .btns-group{
+            display: flex;
+            justify-content: center;
             gap: var(--spac24-16);
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .data-main{
+        .container{
+            .col-10-cus{
+                width: 100%;
+            }
+        }
+    }
+    #pills-info{
+        .content-container{
+            .content{
+                flex-direction: column;
+                .title{
+                    width: 100%;
+                }
+            }
+            .btns{
+                flex-direction: column;
+                button{
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    #pills-record{
+        .content{
+            .title-cards{
+                .cards-group{
+                    .card{
+                        display: none;
+                    }
+                    .mobile-card{
+                        display: block;
+                    }
+                }
+            }
+            .table-group{
+                .btns-group{
+                    .filter-btn{
+                        display: flex;
+                        justify-content: end;
+                        flex: 1;
+                        button{
+                            border: none;
+                            box-shadow: none;
+                            .button-text{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .table{
+                    display: none;
+                }
+                .mobile-table{
+                    display: flex;
+                    flex-direction: column;
+                    .table-header{
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid $border-primary;
+                        padding: 0 var(--spac-btn12-8);
+                        .table-header{
+                            font-weight: 500;
+                        }
+                    }
+                    .table-body{
+                        .table-item{
+                            border-bottom: 1px solid $border-primary;
+                            .item-box{
+                                display: flex;
+                                justify-content: space-between;
+                                p{
+                                    width: 100%;
+                                    padding: .5rem var(--spac-btn12-8);
+                                }
+                                .btns{
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0 var(--spac-btn12-8);
+                                    button{
+                                        text-wrap: nowrap;
+                                    }
+                                }
+                            }
+                            .item-body, .item-bottom{
+                                color: $text-secondary;
+                            }
+                            &.finish{
+                                color: $text-finish;
+                            }
+                            &:nth-child(odd){
+                                background-color: $table-bg-body-odd;
+                            }
+                            &:nth-child(even){
+                                background-color: $table-bg-body-even;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #pills-plan{
+        .content{
+            .content-block{
+                flex-direction: column;
+                .title{
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+            .btns-group{
+                flex-direction: column;
+                button{
+                    justify-content: center;
+                }
+            }
         }
     }
 }

@@ -22,6 +22,7 @@
       }
     }
     .img-box{
+      gap: 1.5rem;
       padding: var(--spac-section12-0);
       z-index: 1;
       .imgs-group{
@@ -314,6 +315,10 @@
           display: flex;
           flex-direction: column;
           gap: var(--spac24-16);
+          .accordion-item .accordion-header button{
+            display: inline-flex;
+            align-items: flex-start;
+          }
         }
       }
     }
@@ -330,6 +335,9 @@
     .hero{
       position: relative;
       padding: var(--spac-section80-48) .75rem;
+      .container-fluid{
+        padding: 0;
+      }
       .gradient-ball{
         width: 50rem;
         position: absolute;
@@ -348,6 +356,7 @@
         }
       }
       .img-box{
+        gap: 0;
         .imgs-group{
           display: none;
           width: auto;
@@ -364,6 +373,7 @@
     .story{
       .container{
         flex-direction: column;
+        padding: 0;
         .text{
           width: 100%;
         }
@@ -374,6 +384,7 @@
     }
     .choose{
       .container{
+        padding: 0;
         .cards{
           flex-direction: column;
         }
@@ -392,6 +403,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
         .imgs{
           width: 100%;
         }
@@ -422,6 +434,7 @@
     }
     .qa{
       .container{
+        padding: 0;
         .content{
           .imgs{
             display: none;
@@ -431,8 +444,16 @@
             display: flex;
             flex-direction: column;
             gap: var(--spac24-16);
+            .accordion-item .accordion-header button{
+              gap: .5rem;
+            }
           }
         }
+      }
+    }
+    .cta{
+      .container{
+        padding: 0;
       }
     }
   }

@@ -21,3 +21,11 @@
         }
     }
 }
+
+@media (max-width: 769px) {
+    .main-privacy-policy, .main-user-terms{
+        .container{
+            padding: 0;
+        }
+    }
+}

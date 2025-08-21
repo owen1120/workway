@@ -206,12 +206,16 @@
                 background-size: 50% auto;
                 background-repeat: repeat;
             }
+            .container{
+                padding: 0;
+            }
             .banner-person{
                 display: none;
             }
         }
         .plant-1{
             .container{
+                padding: 0;
                 .cards{
                     display: flex;
                     flex-direction: column;
@@ -221,6 +225,7 @@
         }
         .plant-2{
             .container{
+                padding: 0;
                 .cards{
                     flex-direction: column;
                     .card{
@@ -231,6 +236,7 @@
         }
         .sub{
             .container{
+                padding: 0;
                 .card-subscribe{
                     .subscribe-1{
                         display: none;
@@ -239,6 +245,11 @@
                         display: none;
                     }
                 }
+            }
+        }
+        .cta{
+            .container{
+                padding: 0;
             }
         }
     }
