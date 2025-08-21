@@ -1,6 +1,17 @@
 .header{
   .navbar{
     .container{
+      position: relative;
+      .login{
+        display: none;
+        gap: .75rem;
+        .navbar-toggler{
+          border: none;
+          span{
+            font-size: 1.5rem;
+          }
+        }
+      }
       .navbar-nav{
         display: flex;
         gap: .75rem;
@@ -10,9 +21,6 @@
         height: 44px;
         aspect-ratio: 1 / 1;
       }
-      .login{
-        padding: .5rem var(--spac24-16);
-      }
     }
   }
 }
@@ -20,94 +28,148 @@
 #authModal{
   .modal-dialog{
     max-width: 1200px;
-    .modal-content {
-      border: none;
-      border-radius: 1rem; // 根據圖片設定圓角
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      background-clip: unset; // 為了自定義圓角不被裁剪
-      .modal-body {
-        padding: 0; // 移除預設 padding，讓內容從邊緣開始
-        // 自定義佈局樣式
-        .auth-layout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    .modal-content{
+      .modal-body{
+        padding: 0;
+        #register-section{
+          display: none;
+        }
+        .auth-layout{
           display: flex;
-          flex-direction: row;
-          // 左側圖片/文字區塊
-          .auth-image-section {
-            flex-basis: 50%;
-            padding: 2.5rem;
-            background-color: #f5f5f5;
-            border-radius: 1rem 0 0 1rem; // 只設定左上和左下圓角
+          .auth-image-section{
+            width: 60%;
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+          .auth-form-section{
+            width: 40%;
+            max-width: 500px;
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
-          
-            img {
-              max-width: 100%;
-              height: auto;
-              border-radius: 0.5rem;
-              margin-bottom: 1.5rem;
+            padding: var(--spac48-24);
+            .modal-title{
+              margin-bottom: var(--spac48-24);
             }
-            h4 {
-              font-weight: 600;
+            form{
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 1.5rem;
+              margin-bottom: var(--spac48-24);
+              .other-btns{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                border-bottom: 1px solid $border-primary;
+                padding-bottom: 1.5rem;
+                button{
+                  justify-content: center;
+                  padding-right: var(--spac-btn12-8);
+                }
+              }
+              .form-group{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .form-floating{
+                  input{
+                    display: flex;
+                    justify-content: center;
+                  }
+                  label{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    a{
+                      
+                      span{
+                        font-size: 1.25rem;
+                      }
+                    }
+                  }
+                }
+                .forget-password{
+                  display: flex;
+                  justify-content: flex-end;
+                  color: $text-secondary;
+                }
+                button{
+                  justify-content: center;
+                  align-items: center;
+                }
+                .form-check{
+                  display: flex;
+                  align-items: center;
+                  gap: .25rem;
+                  input{
+                    width: 20px;
+                    height: 20px;
+                  }
+                  label{
+                    display: flex;
+                    align-items: center;
+                    gap: .25rem;
+                    margin-top: .25rem;
+                    a{
+                      color: $border-secondary;
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
             }
-            p {
-              font-size: 0.9rem;
-              color: #888;
+            .link-switch{
+              display: flex;
+              gap: .25rem;
+              font-weight: 500;
+              a{
+                color: $border-secondary;
+                text-decoration: underline;
+              }
+            }
+            button.btn-close{
+              position: absolute;
+              top: 1.5rem;
+              right: 1.5rem;
+              border-radius: var(--radius-btn);
+              span{
+                max-width: 44px;
+                max-height: 44px;
+              }
             }
           }
-          // 右側表單區塊
-          .auth-form-section {
-            flex-basis: 50%;
-            padding: 2.5rem;
-            display: flex;
-            flex-direction: column;
-          
-            .modal-title {
-              font-size: 1.5rem;
-              font-weight: 700;
-              margin-bottom: 1.5rem;
-            }
-            .form-group {
-              margin-bottom: 1rem;
-            }
-            .form-control {
-              width: 100%;
-              padding: 0.75rem;
-              border: 1px solid #ddd;
-              border-radius: 0.5rem;
-              font-size: 1rem;
-              outline: none;
-              transition: border-color 0.2s;
-              &:focus {
-                border-color: #0d6efd;
-              }
-            }
-            .btn-submit {
-              width: 100%;
-              padding: 0.75rem;
-              background-color: #0d6efd;
-              color: white;
-              border: none;
-              border-radius: 0.5rem;
-              cursor: pointer;
-              font-weight: 600;
-              transition: background-color 0.2s;
-              &:hover {
-                background-color: #0b5ed7;
-              }
-            }
-            .link-switch {
-              text-align: center;
-              margin-top: 1rem;
-              a {
-                color: #0d6efd;
-                text-decoration: none;
-                font-weight: 500;
-              }
-            }
-          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .header{
+    .navbar{
+      .container{
+        .login{
+          display: flex;
+        }
+        #navbarSupportedContent{
+          width: 100%;
+          height: 100vh;
+          position: relative;
+          z-index: 1000;
         }
       }
     }

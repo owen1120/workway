@@ -4,9 +4,12 @@
             <a class="navbar-brand" href="./index.html">
                 <img src="/assets/images/logo.svg" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="login">
+                <button type="button" class="btn btn-md-outline body-md mobile-btn" data-bs-toggle="modal" data-bs-target="#authModal">登入/註冊</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
@@ -32,52 +35,69 @@
                         <!-- 登入頁面容器 -->
                         <div class="auth-layout" id="login-section">
                         <div class="auth-image-section">
-                            <img src="https://placehold.co/300x400/eeeeee/333333?text=Login" alt="登入頁面圖片">
-                            <h4>歡迎回來！</h4>
-                            <p>WorkWay 都在你身旁</p>
+                            <img src="../assets/images/login.png" alt="login-img">
                         </div>
                         <div class="auth-form-section">
                             <h5 class="modal-title">登入</h5>
                             <form>
-                            <div class="form-group">
-                                <label for="login-email">電子郵件</label>
-                                <input type="email" class="form-control" id="login-email">
+                            <div class="other-btns">
+                                <button type="button" class="btn btn-md-outline body-md"><img src="../assets/images/google_logo.svg" alt="google logo">Google</button>
+                                <button type="button" class="btn btn-md-outline body-md"><img src="../assets/images/discord_logo.svg" alt="discord logo">Discord</button>
                             </div>
                             <div class="form-group">
-                                <label for="login-password">密碼</label>
-                                <input type="password" class="form-control" id="login-password">
+                                <div class="form-floating body-md">
+                                    <input type="email" class="form-control" id="login-email" placeholder="帳號">
+                                    <label for="login-email">帳號</label>
+                                </div>
+                                <div class="form-floating body-md">
+                                    <input type="password" class="form-control" id="login-password" placeholder="密碼">
+                                    <label for="login-password">密碼<a href="#"><span class="material-symbols-outlined align-bottom">visibility_off</span></a></label>
+                                </div>
+                                <div class="forget-password"><a href="#" class="body-sm">忘記密碼</a></div>
+                                <button type="submit" class="btn btn-md-fill body-md">送出<span class="material-symbols-outlined align-bottom">chevron_right</span></button>
                             </div>
-                            <button type="submit" class="btn-submit">登入</button>
                             </form>
-                            <div class="link-switch">
-                            還沒有帳號？ <a href="#" id="show-register-form">註冊</a>
-                            </div>
+                            <div class="link-switch body-md"><span>不是會員？</span><a href="#" id="show-register-form">快速註冊</a></div>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         </div>
 
                         <!-- 註冊頁面容器 (預設隱藏) -->
-                        <div class="auth-layout d-none" id="register-section">
-                        <div class="auth-image-section">
-                            <img src="https://placehold.co/300x400/eeeeee/333333?text=Register" alt="註冊頁面圖片">
-                            <h4>加入我們！</h4>
-                            <p>每一天都不會再是沒有方向的你</p>
-                        </div>
+                        <div class="auth-layout" id="register-section">
                         <div class="auth-form-section">
                             <h5 class="modal-title">註冊</h5>
                             <form>
-                            <div class="form-group">
-                                <label for="register-email">電子郵件</label>
-                                <input type="email" class="form-control" id="register-email">
+                            <div class="other-btns">
+                                <button type="button" class="btn btn-md-outline body-md"><img src="../assets/images/google_logo.svg" alt="google logo">Google</button>
+                                <button type="button" class="btn btn-md-outline body-md"><img src="../assets/images/discord_logo.svg" alt="discord logo">Discord</button>
                             </div>
                             <div class="form-group">
-                                <label for="register-password">密碼</label>
-                                <input type="password" class="form-control" id="register-password">
+                                <div class="form-floating body-md">
+                                    <input type="email" class="form-control" id="register-email" placeholder="帳號">
+                                    <label for="register-email">帳號</label>
+                                </div>
+                                <div class="form-floating body-md">
+                                    <input type="password" class="form-control" id="register-password" placeholder="密碼">
+                                    <label for="register-password">密碼<a href="#"><span class="material-symbols-outlined align-bottom">visibility_off</span></a></label>
+                                </div>
+                                <div class="form-floating body-md">
+                                    <input type="password" class="form-control" id="register-password-again" placeholder="確認密碼">
+                                    <label for="register-password-again">確認密碼<a href="#"><span class="material-symbols-outlined align-bottom">visibility_off</span></a></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="agree">
+                                    <label class="form-check-label body-sm" for="agree">
+                                    <span>我同意</span><a href="./user-terms.html">服務條款</a><span>和</span><a href="./privacy-policy.html">隱私政策</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-md-fill body-md">送出<span class="material-symbols-outlined align-bottom">chevron_right</span></button>
                             </div>
-                            <button type="submit" class="btn-submit">註冊</button>
                             </form>
-                            <div class="link-switch">
-                            已有帳號？ <a href="#" id="show-login-form">登入</a>
-                            </div>
+                            <div class="link-switch body-md"><span>已經會員？</span><a href="#" id="show-login-form">直接登入</a></div>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="auth-image-section">
+                            <img src="../assets/images/register.png" alt="register-img">
                         </div>
                         </div>
 
