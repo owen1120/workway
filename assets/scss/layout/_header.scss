@@ -12,14 +12,19 @@
           }
         }
       }
-      .navbar-nav{
-        display: flex;
-        gap: .75rem;
-      }
-      .user-avatar{
-        width: 44px;
-        height: 44px;
-        aspect-ratio: 1 / 1;
+      .navbar-collapse{
+        .navbar-nav{
+          display: flex;
+          gap: .75rem;
+        }
+        .menu-close-btn-box{
+          display: none;
+        }
+        .user-avatar{
+          width: 44px;
+          height: 44px;
+          aspect-ratio: 1 / 1;
+        }
       }
     }
   }
@@ -158,20 +163,115 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .header .navbar .container #navbarSupportedContent #authModal .modal-dialog .modal-content .modal-body{
+    .auth-layout{
+      .auth-image-section{
+        display: none;
+      }
+      .auth-form-section{
+        width: 100%;
+        max-width: none;
+      }
+    }
+  }
+}
+
 @media (max-width: 769px) {
   .header{
+    &.is-active{
+      display: none;
+    }
     .navbar{
       .container{
         .login{
           display: flex;
         }
         #navbarSupportedContent{
-          width: 100%;
-          height: 100vh;
-          position: relative;
-          z-index: 1000;
+          .menu-close-btn-box{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            .menu-close-btn{
+              max-width: 44px;
+              max-height: 44px;
+              border-radius: var(--radius-btn);
+            }
+          }
+          #authModal{
+            .modal-dialog{
+              min-height: 100vh;
+              margin: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .modal-content{
+                width: 100vw;
+                height: 100vh;
+                border-radius: 0;
+                border: none;
+                .modal-body{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 0;
+                  .auth-layout{
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+        #navbarSupportedContent.collapse.show {
+          position: fixed; 
+          top: 0;
+          left: 0;
+          width: 100vw; 
+          height: 100vh; 
+          display: flex; 
+          flex-direction: column;
+          align-items: center; 
+          gap: 1rem;
+          background-color: $bg-primary; 
+          padding: 1.5rem;
+          z-index: 1000; 
+          transform: none; 
+          .navbar-nav{
+            flex-direction: column;
+            gap: 1.5rem;
+            flex-grow: 1;
+            text-align: center;
+            width: 100%;
+            .nav-item{
+              padding: 1rem var(--spac24-16);
+              border-radius: var(--radius-btn);
+              .nav-link{
+                padding: 0;
+              }
+            }
+          }
+          .login-button{
+            width: 100%;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: $text-primary;
+            background: $btn-lg-bg;
+            border: none;
+            padding: var(--spac-btn12-8);
+            &:hover, &.hover, &:active, &.active{
+              color: $text-deepbg-primary;
+              background: $btn-lg-bg-hover;
+            }
+          }
         }
       }
     }
+  }
+  .modal-backdrop{
+    display: none;
   }
 }

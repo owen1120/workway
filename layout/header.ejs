@@ -5,27 +5,30 @@
                 <img src="/assets/images/logo.svg" alt="logo">
             </a>
             <div class="login">
-                <button type="button" class="btn btn-md-outline body-md mobile-btn" data-bs-toggle="modal" data-bs-target="#authModal">登入/註冊</button>
+                <button type="button" class="btn btn-md-outline body-md mobile-btn" id="externalAuthBtn" data-bs-toggle="modal" data-bs-target="#authModal">登入/註冊</button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="menu-close-btn-box">
+                    <button type="button" class="btn-close btn-onlyicon menu-close-btn" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-label="Close"></button>
+                </div>
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="./service.html">服務方案</a>
+                    <a class="nav-link body-md" href="./service.html">服務方案</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./about.html">關於職旅</a>
+                    <a class="nav-link body-md" href="./about.html">關於職旅</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item body-md">
                     <a class="nav-link" href="./contact.html">聯絡我們</a>
                     </li>
                 </ul>
                 <!-- <a href="user.html"><img src="/assets/images/avatar.png" alt="avatar" class="user-avatar rounded-circle border me-2">Mokumaru</a> -->
 
                 <!-- 點擊此按鈕開啟 Modal -->
-                <button type="button" class="btn btn-md-outline body-md" data-bs-toggle="modal" data-bs-target="#authModal">登入/註冊</button>
+                <button type="button" class="btn btn-md-outline body-md login-button" data-bs-toggle="modal" data-bs-target="#authModal">登入/註冊</button>
 
                 <!-- 單一的彈出視窗 Modal -->
                 <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
